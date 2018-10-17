@@ -24,12 +24,13 @@ public class chase : MonoBehaviour {
 
 
             anim.SetBool("isIdle", false);
-            if (direction.magnitude > 5)
+            if (direction.magnitude > 2)
             {
-                this.transform.Translate(0, 0, 0.05f);
+                this.transform.Translate(0, 0, 0.01f);
                 anim.SetBool("isWalking", true);
                 anim.SetBool("isAttacking", false);
             }
+            // Close enough to attack, animate the attack and decrement health
             else
             {
                 anim.SetBool("isAttacking", true);
