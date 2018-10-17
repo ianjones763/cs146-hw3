@@ -10,6 +10,7 @@ public class chase : MonoBehaviour {
 	}
 	
 
+
 	void Update () 
     {
         Vector3 direction = player.position - this.transform.position;
