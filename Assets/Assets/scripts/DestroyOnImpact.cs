@@ -7,7 +7,7 @@ public class DestroyOnImpact : MonoBehaviour
     {
         if (collision.collider.tag == "Knife")
         {
-            Debug.Log("hit");
+            Timer.timeAdd = true;
             Destroy(gameObject);
         }
     }

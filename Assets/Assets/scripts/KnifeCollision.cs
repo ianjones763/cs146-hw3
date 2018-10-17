@@ -6,8 +6,6 @@ public class KnifeCollision : MonoBehaviour {
         if (collision.collider.tag == "Enemy")
         {
             Destroy(gameObject);
-            Timer.timeLeft = Timer.timeLeft - 10;
-            //Debug.Log(Timer.timeLeft);
         }
     }
 }
