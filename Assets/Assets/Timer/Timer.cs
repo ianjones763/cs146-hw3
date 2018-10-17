@@ -7,7 +7,7 @@ public class Timer : MonoBehaviour {
 
     Image timerBar;
     public float maxTime = 5f;
-    float timeLeft;
+    public static float timeLeft;
     public GameObject timesUpText;
 
 	// Use this for initialization
@@ -22,6 +22,7 @@ public class Timer : MonoBehaviour {
         if (timeLeft > 0) {
             timeLeft -= Time.deltaTime;
             timerBar.fillAmount = timeLeft / maxTime;
+            //Debug.Log("timeLeft = " + timeLeft);
         } else {
             timesUpText.SetActive(true);
             Time.timeScale = 0;

@@ -202,6 +202,8 @@ GameObject:
   - component: {fileID: 4590712238468008}
   - component: {fileID: 95142429845414650}
   - component: {fileID: 114060520164828538}
+  - component: {fileID: 136053005206400908}
+  - component: {fileID: 114329207498491452}
   m_Layer: 0
   m_Name: Mush_fast
   m_TagString: Untagged
@@ -797,6 +799,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+--- !u!114 &114329207498491452
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1576060646776294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f10fee8bf422f45e5afdb3ef68dbcccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &136053005206400908
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1576060646776294}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &137897969910538498
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

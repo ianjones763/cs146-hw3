@@ -24,7 +24,6 @@ public class Attack : MonoBehaviour
         {
             // Haven't fired yet on this key stroke, so fire
             StartCoroutine("Throw");
-            //    Throw();
         }
         else if (Input.GetButtonUp("Jump") && thrown)
         {
@@ -39,11 +38,10 @@ public class Attack : MonoBehaviour
     {
         thrown = true;
         yield return new WaitForSeconds(.5f);
-        //thrown = true;
         ready = Time.time + cooldown;
         var knife = (GameObject)Instantiate(knifePrefab, knifeSpawn.position, knifeSpawn.rotation);
-        knife.GetComponent<Rigidbody>().velocity = knife.transform.forward * knifeVelocity;
-        //Destroy(knife, 0.5f);
+        knife.GetComponent<Rigidbody>().velocity = (knife.transform.forward + 0.4f * knife.transform.up) * knifeVelocity;
+        Destroy(knife, 0.5f);
     }
     
 }
